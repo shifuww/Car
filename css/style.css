@@ -27,6 +27,31 @@ body{
     border: 0;
 
 }
+.nav.open{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    color: #DB2512;
+    border: #FFFFFF solid 2px;
+
+}
+.nav.open a{
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.header__block#burger-menu{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
 .btn:hover{
     background-color: #761105;
     transition: background-color .2s ease;
@@ -71,14 +96,18 @@ p{
 }
 
 .nav__link{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.nav__link a{
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 600;
     margin-right: 35px;
-    position: relative;
 }
-.nav__link:after{
+.nav__link.active:after{
     content: '';
     width: 100%;
     height: 2px;

@@ -74,6 +74,16 @@
         min-height: auto;
         padding: 20px;
     }
+    .contacts{
+        max-width: 100%;
+        padding: 10px 5px;
+    }
+    input{
+        max-width: 100px;
+    }
+    textarea{
+        max-width: 90%;
+    }
 }
 @media (max-width: 850px){
     .info{
@@ -96,5 +106,40 @@
     
     .contacts__form{
         margin: 0 auto;
+    }
+}
+@media (max-width: 850px){
+    .container{
+        width: 100%;
+    }
+    .nav{
+        display: none;
+    }
+    .header__lng{
+        display: none;
+    }
+    .header__block#burger-menu{
+        display: block;
+    }
+    .nav__link:after{
+        display: none;
+    }
+}
+@media (max-width: 850px){
+    body{
+        max-width: 100%;
+    }
+    .process__title{
+        margin-bottom: 30px;
+        font-size: 75px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
+    }
+    .process__subtitle{
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-weight: 600;
     }
 }
