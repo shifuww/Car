@@ -94,13 +94,15 @@ p{
 .nav{
     display: flex;
 }
-
+.nav div{
+   padding-right: 30px;
+}
+.nav div:last-child{
+    padding-right: 0;
+}
 .nav__link{
     display: flex;
-    justify-content: center;
     position: relative;
-}
-.nav__link a{
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -128,7 +130,6 @@ p{
     opacity: 1;
     transition: opacity .2s ease;
 }
-
 .header__lng{
     display: flex;
     justify-content: flex-end;
